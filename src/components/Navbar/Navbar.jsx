@@ -8,7 +8,7 @@ function Navbar() {
       <div className="flex-none">
         <ul className="menu menu-horizontal flex gap-4 text-base font-medium">
           <NavLink to='hero'>Home</NavLink>
-          <NavLink to='blog' >Blog</NavLink>
+          <NavLink to='blogs' >Blogs</NavLink>
           <NavLink to='bookmarks' >Bookmarks</NavLink>
         </ul>
       </div>

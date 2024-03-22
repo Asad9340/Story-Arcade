@@ -1,7 +1,7 @@
 import { useLoaderData, NavLink, Outlet } from 'react-router-dom';
 import { MdContentPaste } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
-
+import { MdBookmarkAdd } from 'react-icons/md';
 function BlogDetails() {
   const blog = useLoaderData();
   const {
@@ -32,7 +32,7 @@ function BlogDetails() {
         </div>
         <hr />
       </div>
-      <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-center flex-nowrap bg-gray-800 text-gray-100 rounded-lg">
+      <div className="flex items-center gap-4 -mx-4 overflow-x-auto overflow-y-hidden sm:justify-center flex-nowrap bg-gray-800 text-gray-100 rounded-lg">
         <NavLink
           to=""
           className="flex items-center flex-shrink-0 px-5 py-3 space-x-2 border-b border-gray-400 text-gray-400"
@@ -46,6 +46,9 @@ function BlogDetails() {
         >
           <CgProfile />
           <span>Author</span>
+        </NavLink>
+        <NavLink to='/bookmarks' className='border p-1 rounded-full hover:bg-violet-800 duration-300 active:bg-violet-600'>
+          <MdBookmarkAdd className=" text-3xl text-white"/>
         </NavLink>
       </div>
       <Outlet />
